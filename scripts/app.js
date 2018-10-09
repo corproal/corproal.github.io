@@ -334,4 +334,10 @@
   }
 
   // TODO add service worker code here
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('./scripts/service-worker.js')
+             .then(function() { console.log('Service Worker Registered'); })
+             .catch(function(err) {console.log('ServiceWorker registration failed: ', err); });
+  }
 })();
