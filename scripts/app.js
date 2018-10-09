@@ -187,7 +187,6 @@
         }
       });
     }
-
     // Fetch the latest data.
     var request = new XMLHttpRequest();
     request.onreadystatechange = function() {
@@ -329,7 +328,18 @@
     }
   };
   // TODO uncomment line below to test app with fake data
-  app.updateForecastCard(initialWeatherForecast);
+  // app.updateForecastCard(initialWeatherForecast);
+
+  /************************************************************************
+   *
+   * Code required to start the app
+   *
+   * NOTE: To simplify this codelab, we've used localStorage.
+   *   localStorage is a synchronous API and has serious performance
+   *   implications. It should not be used in production applications!
+   *   Instead, check out IDB (https://www.npmjs.com/package/idb) or
+   *   SimpleDB (https://gist.github.com/inexorabletash/c8069c042b734519680c)
+   ************************************************************************/
 
   // TODO add startup code here
   app.selectedCities = localStorage.selectedCities;
@@ -354,8 +364,7 @@
   // TODO add service worker code here
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-             .register('./scripts/service-worker.js')
-             .then(function() { console.log('Service Worker Registered'); })
-             .catch(function(err) {console.log('ServiceWorker registration failed: ', err); });
+             .register('./service-worker.js')
+             .then(function() { console.log('Service Worker Registered'); });
   }
 })();
