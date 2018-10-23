@@ -1,67 +1,34 @@
-var dataCacheName = 'weatherData-v1';
-var cacheName = 'weatherPWA-step-7-1';
-var filesToCache = [
-  '/',
-  '/index.html',
-  '/scripts/app.js',
-  '/styles/inline.css',
-  '/images/clear.png',
-  '/images/cloudy-scattered-showers.png',
-  '/images/cloudy.png',
-  '/images/fog.png',
-  '/images/ic_add_white_24px.svg',
-  '/images/ic_refresh_white_24px.svg',
-  '/images/partly-cloudy.png',
-  '/images/rain.png',
-  '/images/scattered-showers.png',
-  '/images/sleet.png',
-  '/images/snow.png',
-  '/images/thunderstorm.png',
-  '/images/wind.png'
-];
+/**
+ * Welcome to your Workbox-powered service worker!
+ *
+ * You'll need to register this file in your web app and you should
+ * disable HTTP caching for this file too.
+ * See https://goo.gl/nhQhGp
+ *
+ * The rest of the code is auto-generated. Please don't update this file
+ * directly; instead, make changes to your Workbox build configuration
+ * and re-run your build process.
+ * See https://goo.gl/2aRDsh
+ */
 
-self.addEventListener('install', function(e) {
-  console.log('[ServiceWorker] Install');
-  e.waitUntil(
-    caches.open(cacheName).then(function(cache) {
-      console.log('[ServiceWorker] Caching app shell');
-      return cache.addAll(filesToCache);
-    })
-  );
-});
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
-self.addEventListener('activate', function(e) {
-  console.log('[ServiceWorker] Activate');
-  e.waitUntil(
-    caches.keys().then(function(keyList) {
-      return Promise.all(keyList.map(function(key) {
-        if (key !== cacheName && key !== dataCacheName) {
-          console.log('[ServiceWorker] Removing old cache', key);
-          return caches.delete(key);
-        }
-      }));
-    })
-  );
-  return self.clients.claim();
-});
+importScripts(
+  "/precache-manifest.85862c6e4a0328e1913be0a84edc0914.js"
+);
 
-self.addEventListener('fetch', function(e) {
-  console.log('[Service Worker] Fetch', e.request.url);
-  var dataUrl = 'https://query.yahooapis.com/v1/public/yql';
-  if (e.request.url.indexOf(dataUrl) > -1) {
-    e.respondWith(
-      caches.open(dataCacheName).then(function(cache) {
-        return fetch(e.request).then(function(response){
-          cache.put(e.request.url, response.clone());
-          return response;
-        });
-      })
-    );
-  } else {
-    e.respondWith(
-      caches.match(e.request).then(function(response) {
-        return response || fetch(e.request);
-      })
-    );
-  }
-});
+workbox.core.setCacheNameDetails({prefix: "pwaDemo"});
+
+workbox.skipWaiting();
+workbox.clientsClaim();
+
+/**
+ * The workboxSW.precacheAndRoute() method efficiently caches and responds to
+ * requests for URLs in the manifest.
+ * See https://goo.gl/S9QRab
+ */
+self.__precacheManifest = [].concat(self.__precacheManifest || []);
+workbox.precaching.suppressWarnings();
+workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+
+workbox.routing.registerRoute(/^https:\/\/newsapi.org\//, workbox.strategies.networkFirst(), 'GET');
