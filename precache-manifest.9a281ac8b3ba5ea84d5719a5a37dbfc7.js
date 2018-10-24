@@ -28,43 +28,43 @@ self.__precacheManifest = [
     "url": "/img/loading.e580552f.gif"
   },
   {
-    "revision": "b08d275250f331c8b73f874be4944f16",
+    "revision": "f898c30f9e5a5b2268f45f744eed1b88",
     "url": "/index.html"
   },
   {
-    "revision": "43e9fb32a8900feba233",
-    "url": "/js/app.4781b487.js"
+    "revision": "fddb234202a926902c81",
+    "url": "/js/app.b3f5c9d9.js"
   },
   {
     "revision": "1fd7f7c4f83e364cb2b8",
     "url": "/js/articleDetail.42c603d5.js"
   },
   {
-    "revision": "48e584b0f4f8ce738cfad4cff6a3b975",
-    "url": "/img/splash/launch-1242x2148.png"
+    "revision": "1acc11f6498fe51c5caf2df6aeaabc3c",
+    "url": "/img/splash/launch-1536x2048.png"
   },
   {
     "revision": "7dda7cc83f58fae3357a7f8d6714dff5",
     "url": "/img/splash/launch-1668x2224.png"
   },
   {
-    "revision": "1acc11f6498fe51c5caf2df6aeaabc3c",
-    "url": "/img/splash/launch-1536x2048.png"
-  },
-  {
     "revision": "c031978d3d668c033d0c3fa243e0c345",
     "url": "/img/splash/launch-2048x2732.png"
   },
   {
-    "revision": "2fc3d9ca33a2de590251834beb1fdc22",
-    "url": "/img/splash/launch-640x1136.png"
+    "revision": "48e584b0f4f8ce738cfad4cff6a3b975",
+    "url": "/img/splash/launch-1242x2148.png"
   },
   {
     "revision": "39c4aacc54372a61335f0e3acbb4ff6d",
     "url": "/img/splash/launch-750x1294.png"
   },
   {
-    "revision": "43e9fb32a8900feba233",
+    "revision": "2fc3d9ca33a2de590251834beb1fdc22",
+    "url": "/img/splash/launch-640x1136.png"
+  },
+  {
+    "revision": "fddb234202a926902c81",
     "url": "/css/app.0be1bacc.css"
   }
 ];
