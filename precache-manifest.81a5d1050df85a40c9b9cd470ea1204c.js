@@ -8,8 +8,8 @@ self.__precacheManifest = [
     "url": "/robots.txt"
   },
   {
-    "revision": "c06e3fb27d969e8c5bd043d00b2362f6",
-    "url": "/img/splash/launch-1125x2436.png"
+    "revision": "1acc11f6498fe51c5caf2df6aeaabc3c",
+    "url": "/img/splash/launch-1536x2048.png"
   },
   {
     "revision": "1fd7f7c4f83e364cb2b8",
@@ -40,8 +40,12 @@ self.__precacheManifest = [
     "url": "/js/articleDetail.42c603d5.js"
   },
   {
-    "revision": "1acc11f6498fe51c5caf2df6aeaabc3c",
-    "url": "/img/splash/launch-1536x2048.png"
+    "revision": "48e584b0f4f8ce738cfad4cff6a3b975",
+    "url": "/img/splash/launch-1242x2148.png"
+  },
+  {
+    "revision": "c06e3fb27d969e8c5bd043d00b2362f6",
+    "url": "/img/splash/launch-1125x2436.png"
   },
   {
     "revision": "7dda7cc83f58fae3357a7f8d6714dff5",
@@ -52,16 +56,12 @@ self.__precacheManifest = [
     "url": "/img/splash/launch-2048x2732.png"
   },
   {
-    "revision": "48e584b0f4f8ce738cfad4cff6a3b975",
-    "url": "/img/splash/launch-1242x2148.png"
+    "revision": "2fc3d9ca33a2de590251834beb1fdc22",
+    "url": "/img/splash/launch-640x1136.png"
   },
   {
     "revision": "39c4aacc54372a61335f0e3acbb4ff6d",
     "url": "/img/splash/launch-750x1294.png"
-  },
-  {
-    "revision": "2fc3d9ca33a2de590251834beb1fdc22",
-    "url": "/img/splash/launch-640x1136.png"
   },
   {
     "revision": "fddb234202a926902c81",
