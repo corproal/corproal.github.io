@@ -8,12 +8,12 @@ self.__precacheManifest = [
     "url": "/robots.txt"
   },
   {
-    "revision": "1acc11f6498fe51c5caf2df6aeaabc3c",
-    "url": "/img/splash/launch-1536x2048.png"
+    "revision": "c06e3fb27d969e8c5bd043d00b2362f6",
+    "url": "/img/splash/launch-1125x2436.png"
   },
   {
-    "revision": "1fd7f7c4f83e364cb2b8",
-    "url": "/css/articleDetail.2cbdac73.css"
+    "revision": "6900c4a87ba672eb6da5",
+    "url": "/css/articleDetail.02a816bf.css"
   },
   {
     "revision": "2058d6e09776e0b97c04",
@@ -28,24 +28,24 @@ self.__precacheManifest = [
     "url": "/img/loading.e580552f.gif"
   },
   {
-    "revision": "f898c30f9e5a5b2268f45f744eed1b88",
+    "revision": "f1c1c8d7d486d3d13b1ef6b67da81daf",
     "url": "/index.html"
   },
   {
-    "revision": "fddb234202a926902c81",
-    "url": "/js/app.b3f5c9d9.js"
+    "revision": "2802c2624799b77c3cec",
+    "url": "/js/app.a7503cbf.js"
   },
   {
-    "revision": "1fd7f7c4f83e364cb2b8",
-    "url": "/js/articleDetail.42c603d5.js"
+    "revision": "6900c4a87ba672eb6da5",
+    "url": "/js/articleDetail.d8da492f.js"
   },
   {
     "revision": "48e584b0f4f8ce738cfad4cff6a3b975",
     "url": "/img/splash/launch-1242x2148.png"
   },
   {
-    "revision": "c06e3fb27d969e8c5bd043d00b2362f6",
-    "url": "/img/splash/launch-1125x2436.png"
+    "revision": "1acc11f6498fe51c5caf2df6aeaabc3c",
+    "url": "/img/splash/launch-1536x2048.png"
   },
   {
     "revision": "7dda7cc83f58fae3357a7f8d6714dff5",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/img/splash/launch-750x1294.png"
   },
   {
-    "revision": "fddb234202a926902c81",
+    "revision": "2802c2624799b77c3cec",
     "url": "/css/app.0be1bacc.css"
   }
 ];
