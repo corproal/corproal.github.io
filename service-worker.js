@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.e32bd105674f5728986ed538f28c8037.js"
+  "/precache-manifest.66c3f039469a979d8796388fc67911d0.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "pwaDemo"});
@@ -31,4 +31,4 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerRoute(/^https:\/\/newsapi.org\//, workbox.strategies.staleWhileRevalidate(), 'GET');
+workbox.routing.registerRoute(/^https:\/\/newsapi.org\//, workbox.strategies.networkFirst(), 'GET');
