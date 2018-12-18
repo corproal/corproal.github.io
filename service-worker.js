@@ -1,6 +1,17 @@
-importScripts("/precache-manifest.0a5d67dcec23e17f86f7fc5c631efc22.js", "https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
+importScripts("/precache-manifest.faac35b16a7a581f4e94b52dcf970e72.js");
 
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
+//importScripts('https://unpkg.com/workbox-broadcast-cache-update@2.0.3/build/importScripts/workbox-broadcast-cache-update.prod.v2.0.3.js');
+
+//const testFetchUrl = 'http://192.168.56.102:7010/api/1/user/comment/get/tabList';
+//const cacheName = 'workbox-broadcast-cache-update-example';
+
+//const broadcastCacheUpdate =
+//  new workbox.broadcastCacheUpdate.BroadcastCacheUpdate({
+//  channelName: 'test-fetch-updates',
+//  headersToCheck: ['date'],
+//  source: 'broadcast-cache-update-example',
+//});
 
 workbox.core.setCacheNameDetails({prefix: "pwaDemo"});
 
@@ -30,9 +41,46 @@ workbox.routing.registerRoute(
   'GET'
 );
 
+workbox.routing.registerRoute(
+  /^https:\/\/reqres.in\//, 
+  workbox.strategies.networkFirst(),
+  'POST'
+);
+
+workbox.routing.registerRoute(
+  /^http:\/\/192.168.56.102:7010\//, 
+  workbox.strategies.staleWhileRevalidate(),
+  'GET'
+);
+
 self.addEventListener('notificationclose', function(event) {
   var notification = event.notification;
   var primaryKey = notification.data.primaryKey;
   console.log('Closed notification: ' + primaryKey);
 });
+
+//const testFetchHandler = async () => {
+//  const networkResponse = await fetch(testFetchUrl);
+//  const cache = await caches.open(cacheName);
+//  const cacheResponse = await cache.match(testFileUrl);
+//
+//  if (cacheResponse) {
+//    broadcastCacheUpdate.notifyIfUpdated({
+//      first: cacheResponse,
+//      second: networkResponse,
+//      url: testFetchUrl,
+//      cacheName,
+//    });
+//  }
+//
+//  await cache.put(testFetchUrl, networkResponse.clone());
+//
+//  return networkResponse;
+//};
+
+//self.addEventListener('fetch', (event) => {
+//  if (event.request.url === testFetchUrl) {
+//    event.respondWith(testFetchHandler());
+//  }
+//});
 
