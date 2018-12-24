@@ -1,4 +1,4 @@
-importScripts("/precache-manifest.faac35b16a7a581f4e94b52dcf970e72.js");
+importScripts("/precache-manifest.f259d33fe15d46a4491a3a330b0eb28b.js", "https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 //importScripts('https://unpkg.com/workbox-broadcast-cache-update@2.0.3/build/importScripts/workbox-broadcast-cache-update.prod.v2.0.3.js');
