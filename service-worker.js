@@ -1,4 +1,4 @@
-importScripts("/precache-manifest.f259d33fe15d46a4491a3a330b0eb28b.js", "https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
+importScripts("/precache-manifest.ac208ead5b59fda66be461653d0a7681.js", "https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 //importScripts('https://unpkg.com/workbox-broadcast-cache-update@2.0.3/build/importScripts/workbox-broadcast-cache-update.prod.v2.0.3.js');
@@ -48,7 +48,7 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
-  /^http:\/\/192.168.56.102:7010\//, 
+  /^http:\/\/54.65.238.206:7010\//, 
   workbox.strategies.staleWhileRevalidate(),
   'GET'
 );
