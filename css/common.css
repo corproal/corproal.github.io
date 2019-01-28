@@ -1,4 +1,102 @@
+html {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+  height: 100%;
+  background-color: var(--ice-blue);
+}
+
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	display: block;
+  margin: 0px;
+  font-size: 14px;
+}
+
 body, div, p {
-    margin: 0px;
-    border: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0px;
+  border: 0;
+}
+
+.largeFont {
+	
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #333333;
+}
+
+.mediumFontTealish {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #20bcc4;
+}
+
+.mediumFont {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #333333;
+}
+
+.smallFont {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+}
+
+.smallFontWeight {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+}
+
+.overFlowCol{
+  overflow: hidden;
+}
+
+:root{
+  --ice-blue: #f2f5f7;
+  --white: #fafafa;
+  --white-two: #ffffff;
+  --white-three: #e6e6e6;
+  --white-four: #f2f2f2;
+  --tealish: #20bcc4;
+  --dark: #303747;
+  --tomato:#e63d2e;
+  --maize: #fad046;
+  --deep-sky-blue: #0076ff;
+  --flat-blue: #4179b4;
+  --black: #333333;
+  --brownish-grey: #666666;
+  --brown-grey: #999999;
+  --black-10: rgba(0, 0, 0, 0.1);
+  --black-mask: rgba(51, 51, 51, 0.35)
 }
