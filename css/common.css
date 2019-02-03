@@ -100,3 +100,8 @@ body, div, p {
   --black-10: rgba(0, 0, 0, 0.1);
   --black-mask: rgba(51, 51, 51, 0.35)
 }
+
+html.haveModal{
+  position: fixed;
+  width: 100%;
+}
